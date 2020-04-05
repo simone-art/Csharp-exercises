@@ -1,23 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ConsoleApp1
 {
     class Program
     {
 
-         public static int Calcular()
+         static void Main (string[] args)
         {
-            int A = 10;
-            int B = 50;
-            int C = A + B;
-            return C;
+            var nome = new List<string>();
+            nome.Add("Simone");
+            nome.Add("Silene");
+            nome.Add("Shirley");
 
-        }
-
-        static void Main (string[] args)
-        {
-            Console.WriteLine(Calcular());
-            Console.Read();
+            Console.WriteLine(nome[2]);
         }
     }
 }
