@@ -4,11 +4,20 @@ namespace ConsoleApp1
 {
     class Program
     {
-        static void Main(string[] args)
+
+         public static int Calcular()
         {
-            int idade;
-            idade = (10 + 5) * 2;
-            Console.WriteLine(idade);
+            int A = 10;
+            int B = 50;
+            int C = A + B;
+            return C;
+
+        }
+
+        static void Main (string[] args)
+        {
+            Console.WriteLine(Calcular());
+            Console.Read();
         }
     }
 }
