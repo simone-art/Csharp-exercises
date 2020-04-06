@@ -74,12 +74,20 @@ namespace ConsoleApp1
 
         private static void calculaMediaNotas()
         {
-            int n1, n2, qtd, media;
-            n1 = Convert.ToInt16(Console.ReadLine());
-            n2 = Convert.ToInt16(Console.ReadLine());
+            int[] notas = new int[3];
+            int qtd, media;
+            Console.WriteLine("Digite a primeira nota");
+            notas[0] = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Digite a segunda nota");
+            notas[1] = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Digite a terceira nota");
+            notas[2] = Convert.ToInt16(Console.ReadLine());
+            //Console.WriteLine(notas[2]);
+            Console.WriteLine("Digite a quantidade de materias");
             qtd = Convert.ToInt16(Console.ReadLine());
-            media = (n1 + n2) / qtd;
+            media = (notas[0] + notas[1] + notas[2]) / qtd;
             Console.WriteLine("A media das suas notas é " + media);
+            
             
            
 
